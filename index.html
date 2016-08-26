@@ -17,8 +17,8 @@
     <body ng-app="bijbelonderwijsAtHomeApp">
         <!--Page header-->
         <div class="page-header background-header">
-            <div class="container-fluid">
-                <h1 class="pull-right"><small>Bijbelonderwijs</small>At Home</h1>
+            <div class="container-fluid text-right">
+                <h1 style="color:whitesmoke;"><small style="color:whitesmoke;">Bijbelonderwijs</small>At Home</h1>
             </div>
         </div>
 
@@ -53,10 +53,17 @@
         <div class="content" ng-view></div>
         
         <!--Footer-->
-        <footer class="footer hidden-xs">
+        <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 visible-xs">
+                        <address>
+                            <strong>Han en Anneke Waardenburg</strong><br />
+                            <abbr title="E-mail">E:</abbr> <a href="mailto:bijbelonderwijsathome@gmail.nl">bijbelonderwijsathome@gmail.nl</a><br />
+                        </address>
+                    </div>
+
+                    <div class="col-md-12 hidden-xs">
                         <address>
                             <strong>Han en Anneke Waardenburg</strong><br />
                             Dorpsstraat 67<br />
