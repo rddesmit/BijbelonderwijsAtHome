@@ -1,0 +1,20 @@
+.background-header {
+    min-height: 150px;
+    margin: 0;
+    background: url(../images/bible.jpg);
+    background-size: 100% auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding-bottom: 150px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 9px;
+    background-color: #f5f5f5;
+}

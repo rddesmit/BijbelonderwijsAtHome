@@ -1,0 +1,73 @@
+<!DOCTYPE html/>
+<html>
+    <head lang="nl">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src=".\node_modules\jquery\dist\jquery.js"></script>
+        <script src=".\node_modules\bootstrap\js\tab.js"></script>
+        <script src=".\node_modules\bootstrap\js\collapse.js"></script>
+        <script src=".\node_modules\angular\angular.js"></script>
+        <script src=".\node_modules\angular-route\angular-route.js"></script>
+        <script src=".\javascript\script.js"></script>
+
+        <link rel="stylesheet" type="text/css" href=".\node_modules\bootstrap\dist\css\bootstrap.css">
+        <link rel="stylesheet" type="text/css" href=".\css\style.css" />
+    </head>
+
+    <body ng-app="bijbelonderwijsAtHomeApp">
+        <!--Page header-->
+        <div class="page-header background-header">
+            <div class="container-fluid">
+                <h1 class="pull-right"><small>Bijbelonderwijs</small>At Home</h1>
+            </div>
+        </div>
+
+        <!--Nav bar-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand hidden-sm" href="#">Bijbelonderwijs At Home</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li role="tab" data-toggle="tab" class="active" ><a href="#/home">Home</a></li>
+                        <li role="tab" data-toggle="tab"><a href="#/who">Wie zijn wij?</a></li>
+                        <li role="tab" data-toggle="tab"><a href="#/education">Welk onderwijs?</a></li>
+                        <li role="tab" data-toggle="tab"><a href="#/vision">Visie</a></li>
+                        <li role="tab" data-toggle="tab"><a href="#/subscribe">Aanmelden en kosten</a></li>
+                        <li role="tab" data-toggle="tab"><a href="#/contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <div class="content" ng-view></div>
+        
+        <!--Footer-->
+        <footer class="footer hidden-xs">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <address>
+                            <strong>Han en Anneke Waardenburg</strong><br />
+                            Dorpsstraat 67<br />
+                            2969 AD, Oud-Alblas<br />
+                            <abbr title="Phone">P:</abbr> 06-30770205 (Han) / 06-39316616 (Anneke)<br />
+                            <abbr title="E-mail">E:</abbr> <a href="mailto:bijbelonderwijsathome@gmail.nl">bijbelonderwijsathome@gmail.nl</a><br />
+                            Facebook: Bijbelonderwijs at home
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
