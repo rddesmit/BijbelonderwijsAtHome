@@ -1,0 +1,12 @@
+/* TEAM */
+    Chef: Han Waardenburg
+    From: Oud-Alblas, Netherlands
+
+    Developer: Rudie de Smit
+    Email: rddesmit@hotmail.com
+    From: Nieuw-Lekkerland, Netherlands
+
+/* SITE */
+    Last update: 3/9/2016
+    IDE: Visual Studio Code
+    Frameworks: Angular 1.0, Bootstrap, Less, JQuery

@@ -1,0 +1,46 @@
+@import ".\node_modules\bootstrap\less\bootstrap";
+
+
+//Colers, using the collor pallete below
+//http://paletton.com/#uid=33v0u0kllllaFw0g0qFqFg0w0aF
+@brand-primary:         rgb(41, 82, 109);
+@brand-secondary:       rgb(255, 233, 170);
+@brand-tertiary:        rgb(170, 86, 57);
+@brand-success:         rgb(72, 111, 136);
+@brand-info:            rgb(170, 140, 57);
+@brand-warning:         rgb(128, 100, 21);
+@brand-danger:          rgb(85, 22, 0); 
+
+//navbar
+@navbar-default-color:                      @brand-secondary;
+@navbar-default-bg:                         @brand-primary;
+@navbar-border-radius:                      0 0 @border-radius-base @border-radius-base;
+@navbar-default-toggle-hover-bg:            @brand-success;
+@navbar-default-toggle-icon-bar-bg:         @brand-secondary;
+@navbar-default-toggle-border-color:        @brand-secondary;
+
+.page-header {
+    min-height:             150px;
+    margin:                 0;
+    border-bottom:          0;
+    background:             url(../images/bible.jpg);
+    background-size:        100% auto;
+    background-position:    bottom;
+    background-repeat:      no-repeat;
+}
+
+.content {
+    padding-bottom: 150px;
+        box-shadow: 0 9px 0px 0px white, 
+                    0 -9px 0px 0px white, 
+                    12px 0 15px -4px rgba(0, 0, 0, 0.2), 
+                    -12px 0 15px -4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: @padding-base-vertical;
+    background-color: @brand-secondary;
+}

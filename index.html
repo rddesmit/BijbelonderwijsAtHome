@@ -1,7 +1,11 @@
 <!DOCTYPE html/>
 <html>
     <head lang="nl">
+        <title>Bijbelonderwijs At Home</title>
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bijbelonderwijs at home verzorgt studieavonden over toerusting en heiliging en onderwijst de studie Het fundament.">
+        <meta name="keywords" content="Bijbelonderwijs, bijbel, onderwijs, fundament, bekering van dode werken, opstanding der doden, geloof in God, eeuwig oordeel, leer van dopen, opleggen van handen, toerusting, heiliging, studeren, samen, vrijgemaakt, levenshouding, vasten, aalmoezen geven, dienstbaar zijn, redding, kruisiging, leven, bekeren, aanmoedigen, bemoedigen, geestelijke volwassenheid, uitwisseling, samen op weg, geboden, maatschappij, visie, dienen, Alblasserwaard, Oud Alblas, waarheid, Gods Woord, Jezus  Christus, Heilige Geest, offer, Heer, Heere, Here, dood,  at home, thuis, huis, leven">
 
         <script src=".\node_modules\jquery\dist\jquery.js"></script>
         <script src=".\node_modules\bootstrap\js\tab.js"></script>
@@ -10,13 +14,12 @@
         <script src=".\node_modules\angular-route\angular-route.js"></script>
         <script src=".\javascript\script.js"></script>
 
-        <link rel="stylesheet" type="text/css" href=".\node_modules\bootstrap\dist\css\bootstrap.css">
         <link rel="stylesheet" type="text/css" href=".\css\style.css" />
     </head>
 
     <body ng-app="bijbelonderwijsAtHomeApp">
         <!--Page header-->
-        <div class="page-header background-header">
+        <div class="page-header">
             <div class="container-fluid text-right">
                 <h1 style="color:whitesmoke;"><small style="color:whitesmoke;">Bijbelonderwijs</small>At Home</h1>
             </div>
@@ -50,7 +53,11 @@
             </div><!-- /.container-fluid -->
         </nav>
         
-        <div class="content" ng-view></div>
+        <div class="row">
+            <div class="col-md-3 col-sm-2 hidden-xs"></div>
+            <div class="col-md-6 col-sm-8 col-xs-12 content" ng-view></div>
+            <div class="col-md-3 col-sm-2 hidden-xs"></div>
+        </div>
         
         <!--Footer-->
         <footer class="footer">
