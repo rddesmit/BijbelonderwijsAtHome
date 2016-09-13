@@ -15,18 +15,35 @@
 @navbar-default-color:                      @brand-secondary;
 @navbar-default-bg:                         @brand-primary;
 @navbar-border-radius:                      0 0 @border-radius-base @border-radius-base;
+
+@navbar-default-link-color:                white;
+@navbar-default-link-hover-color:          @brand-secondary;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         white;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
 @navbar-default-toggle-hover-bg:            @brand-success;
-@navbar-default-toggle-icon-bar-bg:         @brand-secondary;
-@navbar-default-toggle-border-color:        @brand-secondary;
+@navbar-default-toggle-icon-bar-bg:         white;
+@navbar-default-toggle-border-color:        white;
 
 .page-header {
     min-height:             150px;
     margin:                 0;
     border-bottom:          0;
     background:             url(../images/bible.jpg);
-    background-size:        100% auto;
+    
     background-position:    bottom;
     background-repeat:      no-repeat;
+
+    @media (max-width: 560px) {
+         background-size:   auto 100%; 
+    }
+    @media (min-width: 560px) {
+        background-size:   100% auto;
+    }
+
 }
 
 .content {
@@ -38,9 +55,10 @@
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-top: @padding-base-vertical;
-    background-color: @brand-secondary;
+    color:              @brand-secondary;
+    position:           fixed;
+    bottom:             0;
+    width:              100%;
+    padding-top:        @padding-base-vertical;
+    background-color:   @brand-warning;
 }
