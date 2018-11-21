@@ -27,9 +27,13 @@ app.config(['$routeProvider', function ($routeProvider) {
         templateUrl: './pages/subscribe.html',
         controller: 'subscribeController'
     })
+    .when('/reviews', {
+        templateUrl: './pages/reviews.html',
+        controller: 'reviewsController'
+    })
     .when('/contact', {
         templateUrl: './pages/contact.html',
-        controller: 'subscribeController'
+        controller: 'contactController'
     })
 
     .otherwise({
@@ -55,6 +59,10 @@ app.controller('visionController', function ($scope) {
 
 // subscribe controller
 app.controller('subscribeController', function ($scope) {
+});
+
+// reviews controller
+app.controller('reviewsController', function ($scope) {
 });
 
 // contact controller
